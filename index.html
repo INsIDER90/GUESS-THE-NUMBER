@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Guess My Number</h1>
+        <p id="header">I'm a number between 1 and 100</p>
+        <h4># of times you've guessed:<p id="guesses"></p></h4>
+        <form id="thegame" action="" method="get">
+          <fieldset>
+            <input type="text" pattern="\d*" id="guess" maxlength="3" />
+            <input type="submit" value="Guess" />
+          </fieldset>
+        </form>
+        <a href="#">New game</a>
+      </main>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="app.js"></script>  
+</body>
+</html>
